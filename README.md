@@ -1,25 +1,28 @@
-cryptodev-python
-================
+# cryptodev-python
 
-Acknowledgment
---------------
-I want to thank Vangelis Koukis for motivating me into developing this project.
-
-About
------
-This is a project to create C bindings for cryptodev in Python.  
+The project creates Python bindings for [cryptodev](https://github.com/cryptodev-linux/cryptodev-linux/) which is 
+written in C.\
 The bindings are basically a Python module named cryptodev (under crypto).  
-The module contains two Python files: ioctl.py and cryptodev.py translated from ioctl.h and cryptodev.h respectively.  
-To use the module just import cryptodev (e.g. from cryptodev import *).  
-You can find examples/tests under tests folder. Those tests were originally written into C by the authors of cryptodev. The tests that exist in this repository are basically a translation from C to Python.
+The module contains two Python files: ioctl.py and cryptodev.py translated from ioctl.h and cryptodev.h respectively.
 
-How to run the tests?
----------------------
-You need the cryptodev module installed (link provided below).  
-Navigate into the tests folder and run the script run_tests.py as:  
-```python run_tests.py```.  
-Note that you must run the script using python 2.7 version and above (now supporting python 3).
+To use the module import cryptodev into your python code. 
+ ```python
+from cryptodev import *
+```  
+You can find tests under /cryptodev-python/tests folder. These tests were originally written in C by the authors of 
+[cryptodev](https://github.com/cryptodev-linux/cryptodev-linux/). 
 
-cryptodev
----------
-You can find cryptodev at: https://github.com/cryptodev-linux/cryptodev-linux/
+## Installation 
+
+Install [cryptodev](https://github.com/cryptodev-linux/cryptodev-linux/) module.
+Cryptodev-python supports python 2.7 or higher and python 3.
+Navigate to /cryptodev-python/tests folder and run run_tests.py:  
+```
+$ python run_tests.py
+```
+## Contributing
+
+
+## Acknowledgment
+
+I want to thank Vangelis Koukis for motivating me to develop this project.
